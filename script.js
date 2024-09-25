@@ -116,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <h3>${project.title}</h3>
             <p>${project.description}</p>
             <p><strong>Technologies:</strong> ${project.technologies.join(', ')}</p>
+            <a href="${project.link || "#"}" class="project-link" target="_blank">View &#8594;</a>
         `;
         projectsContainer.appendChild(projectCard);
     });
